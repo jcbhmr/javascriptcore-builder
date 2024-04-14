@@ -27,7 +27,7 @@ setup() (
 
 build() (
     cd WebKit
-    CC=clang-18 CXX=clang++-18 Tools/Scripts/build-webkit --jsc-only --cmakeargs="-DENABLE_STATIC_JSC=ON -DUSE_THIN_ARCHIVES=OFF"
+    CC=clang-18 CXX=clang++-18 Tools/Scripts/build-webkit --jsc-only
     ln -sf "$PWD"/WebKitBuild/JSCOnly/Release "$(cd .. && pwd)/dist"
 )
 
