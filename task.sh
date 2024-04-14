@@ -7,7 +7,7 @@ setup() (
     cd WebKit
     if [[ $(uname -s) == "Linux" ]]; then
         if [[ $(lsb_release -is) == "Ubuntu" ]]; then
-            sudo apt install libicu-dev python ruby bison flex cmake build-essential ninja-build git gperf
+            sudo apt install libicu-dev python-is-python3 ruby bison flex cmake build-essential ninja-build git gperf
             sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
         else
             echo dunno
